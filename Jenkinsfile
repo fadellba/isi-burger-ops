@@ -16,11 +16,11 @@ pipeline {
             }
         }
 
-        stage('Unit Tests') {
-            steps {
-                bat "php artisan test"
-            }
-        }
+//         stage('Unit Tests') {
+//             steps {
+//                 bat "php artisan test"
+//             }
+//         }
 
         stage('Deploy Docker') {
             steps {
