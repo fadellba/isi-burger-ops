@@ -29,7 +29,7 @@ pipeline {
                     bat "docker-compose up -d --build"
                     sleep 15
                     //bat "docker exec isi-burger-app php artisan migrate:fresh --seed --force"
-                    bat "docker-compose run --rm app php artisan migrate:fresh"
+                    bat "docker-compose run --rm app php artisan migrate:fresh --seed --force"
                 }
             }
         }
