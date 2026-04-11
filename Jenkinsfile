@@ -27,7 +27,7 @@ pipeline {
                 script {
                     //bat "docker-compose down --remove-orphans"
                     bat "docker-compose up -d --build"
-                    //sleep 15
+                    sleep 15
                     bat "docker exec isi-burger-app php artisan migrate:fresh --seed --force"
                 }
             }
